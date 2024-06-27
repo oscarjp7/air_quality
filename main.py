@@ -50,6 +50,7 @@ if conc_per_borough == 'y':
     plot_pollutant_borough(joined_data, boroughs, pollutant)
     print('Done')
 
+# Plot pollutant concentration over London
 if conc_distribution == 'y':
     print(f'Creating {pollutant} concentration map')
     plot_pollutant_data(joined_pollutant_data, pollutant)
