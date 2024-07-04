@@ -15,7 +15,7 @@ def plot_pollutant_borough(joined_data, boroughs, pollutant):
     for i, year in enumerate(['2013','2016','2019']):
         plot_year_data(axs[i], joined_data, boroughs, f'{year}_data', cmap, norm, pollutant)
 
-    cbar_ax = fig.add_axes([0.92, 0.15, 0.02, 0.7])
+    cbar_ax = fig.add_axes([0.92, 0.3, 0.02, 0.4])
     sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
     sm.set_array([])
     cbar = fig.colorbar(sm, cax=cbar_ax)
